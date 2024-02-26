@@ -19,7 +19,12 @@ Large language models (LLMs) have made significant progress in generating codes 
 
 
 ## Dataset
-The data is stored in `data/program_language/natural_language/`. We have 80 parallel problems in 23 different natural languages and 12 programming languages.  
+The data is stored in `data/program_language/natural_language/`. We have 80 parallel problems in 23 different natural languages and 12 programming languages. 
+**23 NLs** are:
+"English", "Russian", "Chinese", "German", "Spanish", "French", "Italian", "Portuguese", "Greek", "Hungarian", "Dutch", "Finnish", "Indonesian", "Turkish", "Arabic", "Vietnamese", "Bulgarian", "Persian", "Malay", "Hebrew", "Estonian", "Tagalog", "Afrikaans"
+**12 PLs** are:
+"python", "java", "javascript", "csharp", "go", "kotlin", "perl", "php", "ruby", "scala", "swift", "typescript"
+
 
 <img width="60%" alt="image" src="https://github.com/FloatAI/humaneval-xl/assets/13767887/37023fcd-4c7e-41bf-8323-c5fcb5ac36a4">
 
