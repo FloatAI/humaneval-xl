@@ -184,7 +184,7 @@ For attribution in academic contexts, please cite this work as:
   title = {HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-Lingual Natural Language Generalization},
   booktitle = {The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month = may,
-  address = {Torino, Italia},
+  address = {Torino, Italy},
   year = {2024},
 }
 ```
