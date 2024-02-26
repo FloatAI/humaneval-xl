@@ -30,7 +30,77 @@ The data is stored in `data/program_language/natural_language/`. We have 80 para
 
 <img width="60%" alt="image" src="https://github.com/FloatAI/humaneval-xl/assets/13767887/37023fcd-4c7e-41bf-8323-c5fcb5ac36a4">
 
+You can also use **HuggingFace datasets** to load a specific dataset and language of our dataset!!!
+```python
+from datasets import load_dataset
+dataset = load_dataset("FloatAI/HumanEval-XL", "python")
+DatasetDict({
+    English: Dataset({
+        features: ['task_id', 'language', 'prompt', 'description', 'test', 'entry_point', 'canonical_solution', 'natural_language'],
+        num_rows: 80
+    })
+    Russian: Dataset({
+        features: ['task_id', 'language', 'prompt', 'description', 'test', 'entry_point', 'canonical_solution', 'natural_language'],
+        num_rows: 80
+    })
+    Chinese: Dataset({
+        features: ['task_id', 'language', 'prompt', 'description', 'test', 'entry_point', 'canonical_solution', 'natural_language'],
+        num_rows: 80
+    })
 
+    ⋮
+
+    Afrikaans: Dataset({
+        features: ['task_id', 'language', 'prompt', 'description', 'test', 'entry_point', 'canonical_solution', 'natural_language'],
+        num_rows: 80
+    })
+})
+
+```
+
+### Data Instances
+
+An example of a dataset instance (In python split with Chinese prompts - dataset["Chinese"][0]):
+
+```python
+{
+'task_id': 'python/0',
+'language': 'python',
+'prompt': 'from typing import List\n\n\ndef below_zero(operations: List[int]) -> bool:\n    """ 你会得到一个银行账户的存款和取款操作列表，该账户从零余额开始。你的任务是检测账户余额是否在任何时候降至零以下，并在该点返回True。否则应返回False。\n    \n    >>> below_zero([1, 2, 3])\n    False\n    >>> below_zero([1, 2, -4, 5])\n    True\n    """\n',
+'description': '你会得到一个银行账户的存款和取款操作列表，该账户从零余额开始。你的任务是检测账户余额是否在任何时候降至零以下，并在该点返回True。否则应返回False。\n    ',
+'test': "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([]) == False\n    assert candidate([1, 2, -3, 1, 2, -3]) == False\n    assert candidate([1, 2, -4, 5, 6]) == True\n    assert candidate([1, -1, 2, -2, 5, -5, 4, -4]) == False\n    assert candidate([1, -1, 2, -2, 5, -5, 4, -5]) == True\n    assert candidate([1, -2, 2, -2, 5, -5, 4, -4]) == True\n",
+'entry_point': 'below_zero',
+'canonical_solution': '    balance = 0\n\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n\n    return False\n',
+'natural_language': 'Chinese'
+}
+```
+
+### Data Fields
+
+- `task_id`: identifier for the data sample
+- `prompt`: input for the model containing function header and docstrings
+- `canonical_solution`: solution for the problem in the `prompt`
+- `description`: task description
+- `test`: contains function to test generated code for correctness
+- `entry_point`: entry point for test
+- `language`: programming lanuage identifier to call the appropriate subprocess call for program execution
+- `natural_language`: natural language identifier to show the language the prompt is in
+
+
+### Data Splits
+programming languages are used to speicify splits:
+ - python 
+ - java 
+ - javascript
+ - csharp
+ - go
+ - kotlin
+ - php
+ - perl
+ - ruby
+ - swift
+ - scala
+ - typescript
 
 ## Evaluation
 ### Installation
