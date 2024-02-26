@@ -33,6 +33,7 @@ bash language_setup/ubuntu.sh
 **This program exists to run untrusted model-generated code. Users are strongly
 encouraged not to do so outside of a robust security sandbox. See the comment in
 `execution.py` for more information and instructions.**
+(We use the same scripts from https://github.com/amazon-science/mxeval for code generation evaluation)
 
 Each sample is formatted into a single line:
 ```
