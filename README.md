@@ -30,6 +30,8 @@ The data is stored in `data/program_language/natural_language/`. We have 80 para
 
 <img width="60%" alt="image" src="https://github.com/FloatAI/humaneval-xl/assets/13767887/37023fcd-4c7e-41bf-8323-c5fcb5ac36a4">
 
+
+### Usage with HuggingFace datasets
 You can also use **HuggingFace datasets** to load a specific dataset and language of our dataset!!!
 ```python
 from datasets import load_dataset
@@ -125,7 +127,7 @@ bash language_setup/amazon_linux_ami.sh
 bash language_setup/ubuntu.sh
 ```
 
-## Usage
+## Evaluation Usage
 
 **This program exists to run untrusted model-generated code. Users are strongly
 encouraged not to do so outside of a robust security sandbox. See the comment in
