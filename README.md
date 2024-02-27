@@ -11,7 +11,7 @@
    </a>
 
 
-This repository contains data and evaluation code for the paper "[HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-Lingual Natural Language Generalization](https://arxiv.org/pdf/2402.16694)".
+This repository contains data and evaluation code for the paper "[HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization](https://arxiv.org/pdf/2402.16694)".
 
 
 ## 🔥 News
@@ -193,7 +193,7 @@ For attribution in academic contexts, please cite this work as:
 ```
 @inproceedings{he-xl-2024-pcl,
   author = {Peng, Qiwei and Chai, Yekun and Li, Xuhong},
-  title = {HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-Lingual Natural Language Generalization},
+  title = {HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization},
   booktitle = {The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month = may,
   address = {Torino, Italy},
