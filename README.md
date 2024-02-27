@@ -15,7 +15,8 @@ This repository contains data and evaluation code for the paper "[HumanEval-XL: 
 
 
 ## 🔥 News
-* **26 February, 2024:** 🎉 We release the official codebase and data!🔥
+* **26 February, 2024:** 🎉 We release the official codebase and data! [[GitHub](https://github.com/FloatAI/humaneval-xl/tree/main?tab=readme-ov-file#dataset),[
+🤗dataset](https://huggingface.co/datasets/FloatAI/HumanEval-XL)] 🔥
 * **19 February, 2024:** 🎉 Our work has been accepted to [LREC-COLING 2024](https://lrec-coling-2024.org/)! ✨
 
 ## 🌟 Overview
@@ -42,8 +43,8 @@ The data is stored in `data/program_language/natural_language/`. We have 80 para
 <img width="60%" alt="image" src="https://github.com/FloatAI/humaneval-xl/assets/13767887/37023fcd-4c7e-41bf-8323-c5fcb5ac36a4">
 
 
-### Usage with HuggingFace datasets
-You can also use **HuggingFace datasets** to load a specific dataset and language of our dataset!!!
+### Usage with HuggingFace datasets🤗
+You can also use [🤗**HuggingFace datasets**](https://huggingface.co/datasets/FloatAI/HumanEval-XL) to load a specific dataset and language of our dataset!!!
 ```python
 from datasets import load_dataset
 dataset = load_dataset("FloatAI/HumanEval-XL", "python")
