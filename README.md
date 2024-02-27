@@ -1,6 +1,17 @@
-# LREC-COLING 2024 | HumanEval-XL: An Execution-based Multilingual Code Generation Benchmark Across 23 Natural Languages and 12 Programming Languages
+# [LREC-COLING 2024 | HumanEval-XL: An Execution-based Multilingual Code Generation Benchmark Across 23 Natural Languages and 12 Programming Languages](https://arxiv.org/abs/2402.16694)
 
-This repository contains data and evaluation code for the paper "HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-Lingual Natural Language Generalization".
+   <a href="https://huggingface.co/datasets/FloatAI/HumanEval-XL" target="_blank">
+      <img alt="Datasets" src="https://img.shields.io/badge/📚-Datasets-green" />
+   </a>
+  <a href="https://arxiv.org/abs/2402.16694" target="_blank">
+      <img alt="Paper" src="https://img.shields.io/badge/📜-Paper-purple" />
+   </a>
+  <a href="https://lrec-coling-2024.org/" target="_blank">
+      <img alt="LREC-COLING 2024" src="https://img.shields.io/badge/Proceedings-COLING 2024-red" />
+   </a>
+
+
+This repository contains data and evaluation code for the paper "[HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-Lingual Natural Language Generalization](https://arxiv.org/pdf/2402.16694)".
 
 
 ## 🔥 News
