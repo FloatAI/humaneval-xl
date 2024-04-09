@@ -189,14 +189,12 @@ We adapted Amazon-science's mxeval package (https://github.com/amazon-science/mx
 
 ## Citation
 For attribution in academic contexts, please cite this work as:
-
 ```
-@inproceedings{he-xl-2024-pcl,
-  author = {Peng, Qiwei and Chai, Yekun and Li, Xuhong},
-  title = {HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization},
-  booktitle = {The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
-  month = may,
-  address = {Torino, Italy},
-  year = {2024},
+@article{peng2024humaneval,
+  title={HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization},
+  author={Peng, Qiwei and Chai, Yekun and Li, Xuhong},
+  journal={arXiv preprint arXiv:2402.16694},
+  year={2024}
 }
 ```
+
