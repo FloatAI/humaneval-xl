@@ -187,14 +187,3 @@ However, we recommend that you use the default values for the rest.
 ## Credits
 We adapted Amazon-science's mxeval package (https://github.com/amazon-science/mxeval) for the evaluation. We thank Amazon for their pioneering effort in this field including the release of the dataset and evaluation code.
 
-## Citation
-For attribution in academic contexts, please cite this work as:
-```
-@article{peng2024humaneval,
-  title={HumanEval-XL: A Multilingual Code Generation Benchmark for Cross-lingual Natural Language Generalization},
-  author={Peng, Qiwei and Chai, Yekun and Li, Xuhong},
-  journal={arXiv preprint arXiv:2402.16694},
-  year={2024}
-}
-```
-
